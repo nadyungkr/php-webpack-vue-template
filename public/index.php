@@ -6,15 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>phpvue</title>
+
+        <link rel="stylesheet" href="app.css">
     </head>
     <body>
         <div id="app">
-            <hello-world
-                author='<?=json_encode([
-                    'git'   => 'https://github.com/pronist',
-                    'email' => 'pronist@naver.com'
-                ])?>'
-            ></hello-world>
+            <hello-world message='<?="a PHP Application template with Vue.js 2 + Wepback 4"?>'></hello-world>
         </div>
         <script src="app.js"></script>
     </body>

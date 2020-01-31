@@ -4,6 +4,14 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const path = require('path')
 
+const fileLoaderConfig = {
+  loader: require.resolve('file-loader'),
+  options: {
+    publicPath: '/',
+    esModule: false
+  }
+}
+
 module.exports = {
   entry: {
     app: path.join(__dirname, 'resources/js/app.js')
@@ -36,6 +44,18 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /.(png|jpe?g|gif|svg)(\?.*)?$/,
+        ...fileLoaderConfig
+      },
+      {
+        test: /.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+        ...fileLoaderConfig
+      },
+      {
+        test: /.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        ...fileLoaderConfig
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader'

@@ -5,7 +5,7 @@
     <img src="https://github.styleci.io/repos/236513382/shield?branch=master" alt="StyleCI">
 </p>
 
-a **PHP template** with *Vue.js 2 + Wepback 4*
+a **PHP Application template** with *Vue.js 2 + Wepback 4*
 
 ## Getting Started
 
@@ -24,3 +24,9 @@ composer run **lint**|*PHPCS* with *[PSR-12](https://www.php-fig.org/psr/psr-12/
 npm run **lint**|*ESLint*
 npm run **build**|Build with *Webpack*
 npm run **watch**|*Webpack Dev Server*
+
+## License
+
+[MIT](https://github.com/pronist/phpvue/blob/master/LICENSE)
+
+Copyright 2020. [SangWoo Jeong](https://github.com/pronist). All rights reserved.
