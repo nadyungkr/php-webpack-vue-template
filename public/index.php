@@ -11,7 +11,7 @@
     </head>
     <body>
         <div id="app">
-            <hello-world message='<?="a PHP Application template with Vue.js 2 + Wepback 4"?>'></hello-world>
+            <hello-world message='<?="PHP with Vue.js 2 + Webpack 4"?>'></hello-world>
         </div>
         <script src="app.js"></script>
     </body>

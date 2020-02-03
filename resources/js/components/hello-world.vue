@@ -1,6 +1,5 @@
 <template>
   <div id="hello-world">
-      <img src="../../images/logo.png">
       <h1>{{ message }}</h1>
   </div>
 </template>
@@ -22,7 +21,7 @@ export default {
   width: 600px;
 }
 #hello-world h1 {
-  font-weight: 500;
+  font-weight: 200;
   font-size: 2.5em;
   line-height: 1.5em;
 }
