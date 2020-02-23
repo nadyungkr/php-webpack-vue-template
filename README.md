@@ -14,7 +14,7 @@ php -S localhost:8080 -t public
 npm run watch
 ```
 
-### Commands
+## Commands
 
 Name|Description|
 ----|-----------|
